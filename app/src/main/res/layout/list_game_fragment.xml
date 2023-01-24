@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <!-- FORM -->
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/input_search"
+        android:background="@drawable/edit_text_underline"
+        android:inputType="text"
+        style="@style/defaultTextWhite"
+        android:textColorHint="@color/white"
+        android:padding="12dp"
+        android:id="@+id/edit_search"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="20dp"/>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_search"
+        style="@style/btnText"
+        android:layout_marginBottom="20dp"
+        />
+
+    <!-- TOTAL -->
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="0.3"
+            android:text="@string/text_total"
+            style="@style/defaultTextWhite"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="0.9"
+            android:text="2"
+            style="@style/defaultTextWhite"
+            />
+    </LinearLayout>
+
+
+    <!-- CARD -->
+        <LinearLayout
+            android:id="@+id/card_game"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_card"
+            android:padding="10dp"
+            android:layout_marginBottom="10dp"
+            >
+            <ImageView
+                android:scaleType="centerCrop"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:src="@mipmap/ic_launcher_foreground" />
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.6"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/details_title"
+                    style="@style/defaultTitleGame"
+                    android:padding="5dp"
+                    />
+                <TextView
+                    android:id="@+id/detail_desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/details_desc"
+                    android:padding="5dp"
+                    style="@style/defaultTextWhite"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+       <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border_card"
+        android:padding="10dp"
+        android:layout_marginBottom="10dp"
+        >
+        <ImageView
+            android:scaleType="centerCrop"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"
+            android:src="@mipmap/ic_launcher_foreground" />
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.6"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/details_title"
+                style="@style/defaultTitleGame"
+                android:padding="5dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/details_desc"
+                android:padding="5dp"
+                style="@style/defaultTextWhite"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

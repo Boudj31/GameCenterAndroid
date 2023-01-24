@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/navy"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- Title-->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:id="@+id/title_layout"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/defaultTitle"
+            android:id="@+id/title_fragment"
+            android:text="@string/header_home"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="30dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <!-- Content -->
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/navigation"
+        app:layout_constraintTop_toBottomOf="@id/title_layout"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_margin="20dp"
+       >
+    </FrameLayout>
+    <!--
+       <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@id/navigation"
+        app:layout_constraintTop_toBottomOf="@id/title_layout"
+        android:layout_margin="20dp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="@string/text_game"
+            android:gravity="bottom"
+            android:textColor="@color/white"
+            style="@style/homeText"
+            android:layout_weight="0.5"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/text_center"
+            android:textColor="@color/violet"
+            style="@style/homeText"
+            android:layout_weight="0.5"
+
+            />
+
+
+
+    </LinearLayout>
+    -->
+
+
+    <!-- TabBar -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navigation"
+        android:background="@color/violet"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:menu="@menu/tab_bar_menu"
+        app:itemTextColor="@drawable/active_color"
+        app:itemIconTint="@drawable/active_color"
+
+        />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

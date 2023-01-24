@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">GameCenter</string>
+
+    <!-- HEADER -->
+    <string name="header_home">Accueil</string>
+    <string name="header_add_game">Ajouter un jeu</string>
+    <string name="header_detail_game">Détails</string>
+    <string name="header_list_game">Ma liste de jeux</string>
+
+    <!-- INPUT -->
+    <string name="input_search">Faites votre recherche</string>
+    <string name="input_title">Titre du jeu</string>
+    <string name="input_console">Console</string>
+    <string name="input_description">Description du jeu</string>
+    <string name="input_year">Année de sortie</string>
+
+    <string-array name="console_spinner">
+        <item>PS3</item>
+        <item>PS4</item>
+        <item>PS5</item>
+        <item>Xbox</item>
+        <item>Xbox 360</item>
+        <item>Wii</item>
+        <item>Switch</item>
+    </string-array>
+
+    <!-- BUTTON -->
+    <string name="btn_search">RECHERCHER</string>
+    <string name="btn_add">AJOUTER</string>
+    <string name="btn_add_img">CHARGER UNE IMAGE</string>
+    <string name="btn_delete">SUPPRIMER</string>
+
+    <!-- HOME -->
+    <string name="text_game">GAME</string>
+    <string name="text_center">CENTER</string>
+
+    <!-- DETAILS -->
+    <string name="details_title">The Witcher 3</string>
+    <string name="details_desc">Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Cras ultricies ligula sed magna dictum porta. Donec rut Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Cras ultricies ligula sed magna dictum porta. Donec rutrum congue leo eget malesu Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Cras ultricies ligula sed magna dictum porta. Donec rutrum congue leo eget malesurum congue leo eget malesu</string>
+    <string name="details_console">PS5</string>
+    <string name="details_year">2017</string>
+    <string name="text_desc">Description :</string>
+    <string name="text_year">Année de sortie :</string>
+    <string name="text_console">Console :</string>
+
+    <!-- GAMELIST -->
+    <string name="text_total">Total : </string>
+
+    <!-- TABBAR -->
+    <string name="tb_home">Accueil</string>
+    <string name="tb_add">Ajouter</string>
+    <string name="tb_list">Ma liste</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>

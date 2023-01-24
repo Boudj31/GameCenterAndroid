@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/input_title"
+        android:background="@drawable/edit_text_underline"
+        android:inputType="text"
+        style="@style/defaultTextWhite"
+        android:textColorHint="@color/white"
+        android:padding="12dp"
+        android:id="@+id/edit_title"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="20dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/input_description"
+        android:inputType="textMultiLine"
+        android:lines="10"
+        android:minLines="5"
+        android:gravity="top|left"
+        android:maxLines="15"
+        style="@style/defaultTextWhite"
+        android:textColorHint="@color/white"
+        android:padding="12dp"
+        android:id="@+id/edit_desc"
+        android:background="@drawable/edit_text_underline"
+        android:layout_marginBottom="20dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/input_year"
+        android:background="@drawable/edit_text_underline"
+        android:inputType="text"
+        style="@style/defaultTextWhite"
+        android:textColorHint="@color/white"
+        android:padding="12dp"
+        android:id="@+id/edit_year"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="20dp"/>
+
+
+    <Spinner
+        android:id="@+id/edit_console"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/edit_text_underline"
+        android:entries="@array/console_spinner"
+        android:hint="@string/input_console"
+        android:padding="12dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_add_img"
+        style="@style/btnText"
+        android:layout_marginBottom="20dp"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_add"
+        style="@style/btnText"
+        android:layout_marginBottom="20dp"
+        />
+
+
+
+
+
+</LinearLayout>
