@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_game"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="20dp"
+    android:background="@drawable/border_card"
+    android:layout_marginBottom="10dp"
+    >
+
+    <!-- IMAGE -->
+    <FrameLayout
+        android:id="@+id/layout_img"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_weight="0.4"
+        >
+    <ImageView
+        android:scaleType="centerCrop"
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent"
+        android:id="@+id/img_card"
+        android:src="@drawable/ic_launcher_background"
+        />
+</FrameLayout>
+
+    <!-- TITRE + DESCRIPTION -->
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="0.8">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="@string/details_title"
+            style="@style/defaultTitleGame"
+            android:id="@+id/title_card_tv"
+            android:layout_weight="0.5"
+            android:padding="5dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="@string/details_desc"
+            style="@style/defaultTextGame"
+            android:id="@+id/desc_card_tv"
+            android:layout_weight="0.5"
+            android:padding="5dp"
+            />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

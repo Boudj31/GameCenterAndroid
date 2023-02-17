@@ -26,6 +26,7 @@
         android:layout_height="wrap_content"
         android:text="@string/btn_search"
         style="@style/btnText"
+        android:id="@+id/search_btn"
         android:layout_marginBottom="20dp"
         />
 
@@ -45,6 +46,7 @@
             style="@style/defaultTextWhite"
             />
         <TextView
+            android:id="@+id/tv_total"
             android:layout_width="0dp"
             android:layout_height="30dp"
             android:layout_weight="0.9"
@@ -55,6 +57,12 @@
 
 
     <!-- CARD -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/game_recycleview"
+        />
+    <!--
         <LinearLayout
             android:id="@+id/card_game"
             android:orientation="horizontal"
@@ -135,6 +143,7 @@
         </LinearLayout>
 
     </LinearLayout>
+    -->
 
 
 
